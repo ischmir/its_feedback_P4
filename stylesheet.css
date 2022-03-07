@@ -1,0 +1,149 @@
+body
+{
+    background: #444059;
+  }
+
+@media only screen and (min-width: 699px) {
+  ul {
+      background: #444059;
+      margin: 0;
+      padding: 30px 0px;
+    }
+
+
+    li a {
+      display: inline;
+      color: #b4b3bd;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-family: roboto;
+  }
+
+  li a:hover {
+    background-color: orange;
+    color: black;
+
+  }
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'header header header header header header'
+    'main main main main main main'
+    'right right right left left left'
+    'portfolio portfolio portfolio portfolio portfolio portfolio'
+    'footer footer footer footer footer footer';
+  grid-gap: 0px;
+  padding: 0px;
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 13px;
+  background-color: #444059;
+
+}
+
+.menu{
+  float: left;
+}
+
+.menu a{
+  padding: 20px 20px;
+}
+.logo{
+  float: left;
+  padding-top: 1%;
+  padding-left: 2%;
+}
+
+.icons{
+  float: right;
+  padding-top: 0.5%;
+  padding-right: 5%;
+}
+
+}
+
+
+@media only screen and (max-width: 700px) {
+  ul {
+      background: #444059;
+      margin: 0;
+      padding: 30px 0px;
+
+    }
+
+
+    li a {
+      display: block;
+      color: #b4b3bd;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-family: roboto;
+      border: 2px;
+
+  }
+
+  li a:hover {
+    background-color: black;
+    color: white;
+    border: 2px;
+    border-radius: 4px;
+  }
+
+.menu
+{
+  padding: 0px;
+  z-index: 9;
+  margin-top: 80px;
+}
+
+.logo{
+  margin-bottom: -60px;
+      margin-left: 0px;
+
+}
+.item1 a {
+  font-size: 20px;
+}
+
+.grid-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr
+  1fr 1.5fr;
+  grid-template-areas:
+    'header'
+    'main'
+    'right'
+    'left'
+    'portfolio'
+    'footer';
+  grid-gap: 0px;
+  padding: 0px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 28px 0px;
+}
+
+ul {
+  margin: 0;
+  padding: 0px 0px;
+}
+
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: left; }
+
+
+
+
+li {
+  display: inline;
