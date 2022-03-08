@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
    <title>Eksamens hjemmeside</title>
-<link rel="stylesheet" href="stylesheet.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="p4.js" defer></script>
 </head>
 <body>
 <div class="grid-container">
@@ -33,9 +34,22 @@
 
 <div class="icons">
   <img src="Billeder/icons.png" alt="Italian Trulli" style="height:45px;">
+sa</div>
 </div>
 
-</div>
+        <!-- Timms Kode Start - Drag and Drop Vedhæftet Fil -->
 
-</body>
+        <h2 id="app_status">App status...</h2>
+        <br>
+        <h1>Drop Zone</h1>
+        <br>
+        <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
+        <div id="object1" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">object 1</div>
+        <div id="object2" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">object 2</div>
+        <div id="object3" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">object 3</div>
+        <hr>
+        <button onclick="readDropZone()">Get Object Data</button>
+
+        <!-- Timms Kode Slut - Drag and Drop Vedhæftet Fil -->
+    </body>
 </html>
