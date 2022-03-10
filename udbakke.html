@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
    <title>Eksamens hjemmeside</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/9948f71a8c.js" crossorigin="anonymous"></script>
     <script src="p4.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -34,22 +35,21 @@
 
 <div class="icons">
   <img src="Billeder/icons.png" alt="Italian Trulli" style="height:45px;">
-sa</div>
+</div>
 </div>
 
         <!-- Timms Kode Start - Drag and Drop Vedhæftet Fil -->
-
         <h2 id="app_status">App status...</h2>
         <br>
-        <h1>Drop Zone</h1>
-        <br>
         <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
-        <div id="object1" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">object 1</div>
-        <div id="object2" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">object 2</div>
-        <div id="object3" class="objects" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)">object 3</div>
-        <hr>
-        <button onclick="readDropZone()">Get Object Data</button>
+        <br>
 
+      <footer>
+        <div id="object1" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-pdf fa-2x"></i><p>rapport.pdf</p></div>
+        <div id="object2" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-image fa-2x"></i><p>logo.png</p></div>
+        <div id="object3" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-zipper fa-2x" color="fff"></i><p>projekt.zip</p></div>
+        <button onclick="readDropZone()">Get Object Data</button>
+      </footer>
         <!-- Timms Kode Slut - Drag and Drop Vedhæftet Fil -->
     </body>
 </html>

@@ -3,7 +3,7 @@ console.log ("javascript running");
 function _(id){
     return document.getElementById(id);	
  }
- var droppedIn = false;
+ let droppedIn = false;
  function drag_start(event) {
      _('app_status').innerHTML = "Dragging the "+event.target.getAttribute('id');
      event.dataTransfer.dropEffect = "move";
@@ -17,7 +17,7 @@ function _(id){
  }
  function drag_drop(event) {
      event.preventDefault(); /* Prevent undesirable default behavior while dropping */
-     var elem_id = event.dataTransfer.getData("text");
+     let elem_id = event.dataTransfer.getData("text");
      event.target.appendChild( _(elem_id) );
      _('app_status').innerHTML = "Dropped "+elem_id+" into the "+event.target.getAttribute('id');
      _(elem_id).removeAttribute("draggable");
@@ -31,7 +31,7 @@ function _(id){
      droppedIn = false;
  }
  function readDropZone(){
-     for(var i=0; i < _("drop_zone").children.length; i++){
+     for(let i=0; i < _("drop_zone").children.length; i++){
          alert(_("drop_zone").children[i].id+" is in the drop zone");
      }
      /* Run Ajax request to pass any data to your server */
