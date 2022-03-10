@@ -39,16 +39,14 @@
 </div>
 
         <!-- Timms Kode Start - Drag and Drop Vedhæftet Fil -->
-        <h2 id="app_status">App status...</h2>
+        <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ><p>vedhæftede filer:</p></div>
         <br>
-        <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ></div>
-        <br>
-
-      <footer>
-        <div id="object1" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-pdf fa-2x"></i><p>rapport.pdf</p></div>
-        <div id="object2" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-image fa-2x"></i><p>logo.png</p></div>
-        <div id="object3" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-zipper fa-2x" color="fff"></i><p>projekt.zip</p></div>
         <button onclick="readDropZone()">Get Object Data</button>
+        <div id="besked"></div>
+      <footer>
+        <div id="object1" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-pdf" style="color:#fff">&nbsp;rapport.pdf</i></div>
+        <div id="object2" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-image" style="color:#fff">&nbsp;logo.png</i></div>
+        <div id="object3" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-zipper" style="color:#fff">&nbsp;projekt.zip</i></div>
       </footer>
         <!-- Timms Kode Slut - Drag and Drop Vedhæftet Fil -->
     </body>
