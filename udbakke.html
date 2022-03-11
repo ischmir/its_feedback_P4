@@ -7,36 +7,55 @@
     <script src="https://kit.fontawesome.com/9948f71a8c.js" crossorigin="anonymous"></script>
     <script src="p4.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<div class="grid-container">
-  <div class="item1">
+  </head>
+  <!-- Christians Kode Start-->
+    <body>
+          <nav class="navbar">
+            <div class="logo">
+    <img src="Billeder/itslerning.png" alt="Italian Trulli" style="height:48px;">
 
-    <div class="logo">
-      <img src="Billeder/itslerning.png" alt="Italian Trulli" style="height:48px;">
+            </div>
+
+            <div class="p-menu">
+              <p>Menu</p>
+            </div>
+
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+
+            <div class="navbar-links">
+              <nav class="navbar2">
+              <ul>
+                <li><a href="Index.html">Startside</a></li>
+                <li><a href="index.html">Rum</a></li>
+                <li><a href="">Dashboard og projektrum</a></li>
+                <li><a href="">Kalender</a></li>
+                <li><a href="">bib.ucl.dk</a></li>
+                <li><a href="">nemstudie.dk</a></li>
+                <li><a href="">mitucl.dk</a></li>
+                <li id="Guides"><a href="">Guides</a></li>
+                <li><a href="Udbakke.html">Feedback</a></li>
+              </ul>
+              </nav>
+
+            </div>
+
+            <div class="icons">
+              <div class="dropdown">
+    <button id="myBtn" class="dropbtn"> <img src="Billeder/icons2.png" alt="Italian Trulli" style="height:48px;"></button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="Index.html">Notifikations</a>
+        <a href="Udbakke.html">Mail</a>
+        <a href="Udbakke.html">Beskeder</a>
+        <p id="Morgenmessage"></p>
+      </div>
+      </div>
     </div>
-
-<div class="menu">
-
-<nav>
-    <ul >
-      <li><a href="#home">Startside</a></li>
-      <li><a href="">Rum</a></li>
-      <li><a href="">Dashboard og projektrum</a></li>
-      <li><a href="">Kalender</a></li>
-      <li><a href="">bib.ucl.dk</a></li>
-      <li><a href="">nemstudie.dk</a></li>
-      <li><a href="">mitucl.dk</a></li>
-      <li><a href="">Guides</a></li>
-      <li><a href="indbakke.html">Feedback</a></li>
-    </ul>
-</nav>
-</div>
-
-<div class="icons">
-  <img src="Billeder/icons.png" alt="Italian Trulli" style="height:45px;">
-</div>
-</div>
+          </nav>
+          <!-- Christians Kode Slut-->
 
         <!-- Timms Kode Start - Drag and Drop Vedhæftet Fil -->
 
@@ -44,10 +63,10 @@
         <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ><p>vedhæftede filer:</p></div>
         <!-- ABDEL - kassen du skal flytte har id'et drop_zone og er lige ovenfor -->
         <br>
-        <!-- 
-        <button onclick="readDropZone()">Get Object Data</button> 
+        <!--
+        <button onclick="readDropZone()">Get Object Data</button>
         -->
-        
+
         <div id="besked"></div>
       <footer>
         <div id="object1" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-pdf" style="color:#fff">&nbsp;rapport.pdf</i></div>
