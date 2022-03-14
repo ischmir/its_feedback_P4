@@ -96,16 +96,16 @@
       <div class="login" id="loginjs" style="display: none;">
         <h2>Log In</h2>
         <div class="loginname">
-          <form name="navn" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          <form name="navn" action="/udbakke.html" onsubmit="return validateForm()" method="post">
             <input type="text" name="fname" placeholder="Brugernavn/Email" id="username">
           </form>
         </div>
 
-          <form name="password" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          <form name="password" action="/udbakke.html" onsubmit="return validateForm()" method="post">
             <input type="text" name="fname" placeholder="Password" id="password">
           </form>
             <br>
-          <div class"submit"><input type="submit" value="Log In" onclick="validate()"></div>
+          <form method="post" action="udbakke.html"><input type="submit" value="Log In" onclick="validate()"></form>
 
       </div>
 
@@ -116,19 +116,19 @@
 
         <h2>Opret Konto</h2>
 
-        <form name="navn2" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <form name="navn2" action="/udbakke.html" onsubmit="return validateForm()" method="post">
           <input type="text" name="fname" placeholder="Navn" id="navn2">
         </form>
 
-        <form name="email" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <form name="email" action="/udbakke.html" onsubmit="return validateForm()" method="post">
           <input type="text" name="fname" placeholder="Email" id="email">
         </form>
 
-        <form name="password2" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <form name="password2" action="/udbakke.html" onsubmit="return validateForm()" method="post">
           <input type="text" name="fname" placeholder="Password" id="password2">
         </form>
 
-        <form name="password3" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        <form name="password3" action="/udbakke.html" onsubmit="return validateForm()" method="post">
           <input type="text" name="fname" placeholder="Gentag Password" id="password3"><br>
         </form>
 
@@ -143,7 +143,7 @@
           <span class="checkmark"></span>
         </label>
 
-        <div class="submit"><input type="submit" value="Opret Konto"></div>
+        <form method="post" action="udbakke.html"><input type="submit" value="Opret Konto"></form>
 
       </div>
     </section>
