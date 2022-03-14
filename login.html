@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="login.css">
+    <title></title>
+  </head>
+
+  <body>
+
+
+
+<!--JAVASCRIPT start -->
+    <script>
+      var divs = ["loginjs", "opretjs"];
+      var visibleId = null;
+      function show(id) {
+        if(visibleId !== id) {
+          visibleId = id;
+        }
+        hide();
+      }
+      function hide() {
+        var div, i, id;
+        for(i = 0; i < divs.length; i++) {
+          id = divs[i];
+          div = document.getElementById(id);
+          if(visibleId === id) {
+            div.style.display = "block";
+          } else {
+            div.style.display = "none";
+          }
+        }
+      }
+    </script>
+
+
+  <!--JAVASCRIPT end -->
+
+        <!-- nav bar-->
+    <nav class="navbar">
+             <div class="logo">
+     <img src="Billeder/itslerning.png" alt="Italian Trulli" style="height:48px;">
+
+             </div>
+
+             <div class="p-menu">
+               <p>Menu</p>
+             </div>
+
+             <a href="#" class="toggle-button">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+             </a>
+
+             <div class="navbar-links">
+               <nav class="navbar2">
+               <ul>
+                 <li><a href="Index.html">Startside</a></li>
+                 <li><a href="index.html">Rum</a></li>
+                 <li><a href="">Dashboard og projektrum</a></li>
+                 <li><a href="">Kalender</a></li>
+                 <li><a href="">bib.ucl.dk</a></li>
+                 <li><a href="">nemstudie.dk</a></li>
+                 <li><a href="">mitucl.dk</a></li>
+                 <li id="Guides"><a href="">Guides</a></li>
+                 <li><a href="Udbakke.html">Feedback</a></li>
+               </ul>
+               </nav>
+
+             </div>
+
+             <div class="icons">
+               <div class="dropdown">
+     <button id="myBtn" class="dropbtn"> <img src="Billeder/icons2.png" alt="Italian Trulli" style="height:48px;"></button>
+     <div id="myDropdown" class="dropdown-content">
+         <a href="Index.html">Notifikations</a>
+         <a href="Udbakke.html">Mail</a>
+         <a href="Udbakke.html">Beskeder</a>
+         <p id="Morgenmessage"></p>
+       </div>
+       </div>
+     </div>
+           </nav>
+
+       <!-- nav bar end-->
+
+  <section class="log-container">
+          <h1>ITSLEARNING</h1>
+    <div class="btn">
+      <button onclick = "show('loginjs')">Log In </button>
+      <button onclick = "show('opretjs')">Opret Konto </button>
+    </div>
+    <!-- log in -->
+      <div class="login" id="loginjs" style="display: none;">
+        <h2>Log In</h2>
+        <div class="loginname">
+          <form name="navn" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <input type="text" name="fname" placeholder="Brugernavn/Email">
+          </form>
+        </div>
+
+          <form name="password" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <input type="text" name="fname" placeholder="Password">
+          </form>
+            <br>
+          <div class"submit"><input type="submit" value="Log In"></div>
+
+      </div>
+
+
+    <!-- opret konto -->
+      <div class="opret" id="opretjs" style="display: none;">
+
+        <h2>Opret Konto</h2>
+
+        <form name="navn2" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          <input type="text" name="fname" placeholder="Navn">
+        </form>
+
+        <form name="email" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          <input type="text" name="fname" placeholder="Email">
+        </form>
+
+        <form name="password2" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          <input type="text" name="fname" placeholder="Password">
+        </form>
+
+        <form name="password3" action="/action_page.php" onsubmit="return validateForm()" method="post">
+          <input type="text" name="fname" placeholder="Gentag Password"><br>
+        </form>
+
+        <p>Ønsker du at beskeder fra itslearning <br>feedback også lander på din email?</p>
+        <label class="check">Ja tak
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="check">Nej tak
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <div class="submit"><input type="submit" value="Opret Konto"></div>
+
+      </div>
+    </section>
+  </body>
+</html>
