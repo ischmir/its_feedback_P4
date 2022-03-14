@@ -1,9 +1,10 @@
-@media (min-width: 800px)
-
-* {
+@media (min-width: 800px){
+  * {
     box-sizing: border-box;
+}
 
 }
+
 
 body {
     margin: 0;
@@ -154,7 +155,7 @@ flex-wrap: wrap;
 
 .show {display:block;}
 
-/* Timms CSS SLUT - DRAG AND DROP VEDHÆFTET FIL */
+/* Timms CSS START - DRAG AND DROP VEDHÆFTET FIL */
 
 #object1 {
   display:inline-block;
@@ -162,7 +163,7 @@ flex-wrap: wrap;
   border: #DFBC6A 1px solid;
   border-radius: 5%;
   width: 120px;
-  height: 20px;
+  height: 25px;
   margin: 10px;
   padding: 8px;
   font-size: 14px;
@@ -177,7 +178,7 @@ flex-wrap: wrap;
   border: #DFBC6A 1px solid;
   border-radius: 5%;
   width: 120px;
-  height: 20px;
+  height: 25px;
   margin: 10px;
   padding: 8px;
   font-size: 14px;
@@ -192,21 +193,23 @@ flex-wrap: wrap;
   border: #DFBC6A 1px solid;
   border-radius: 5%;
   width: 120px;
-  height: 20px;
+  height: 25px;
   margin: 10px;
   padding: 8px;
   font-size: 14px;
   text-align: center;
   box-shadow: 2px 2px 2px #999;
   cursor: move;
+  text-align: center;
+  text-justify: auto;
 }
 
 #drop_zone {
   background-color: #EEE;
   border: #999 1px solid;
-  border-radius: 5%;
-  width: 600px;
-  height: 100px;
+  border-radius: 5px;
+  width: 700px;
+  height: 120px;
   padding: 8px;
   font-size: 18px;
 }
@@ -273,6 +276,7 @@ footer {
   transform-origin: right;
 
 }
+}
 
 @media (max-width: 390px) {
 
@@ -280,4 +284,5 @@ footer {
   transform: scale(0.65);
   transform-origin: right;
 
+}
 }
