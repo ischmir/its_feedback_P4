@@ -269,6 +269,134 @@ footer {
 }
 
 
+/* Majas Login og opret konto start */
+
+h1{
+  color: white;
+  text-align: center;
+}
+.login{
+  color: #333;
+  background-color: white;
+  width: 350px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px 1px grey;
+  line-height: 1.6;
+}
+
+.login h2{
+  text-align: center;
+}
+
+
+.login loginname{
+  font-size: 30px;
+}
+
+.opret{
+  color: #333;
+  background-color: white;
+  width: 350px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 20px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 1px 1px grey;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.opret p{
+  font-size: 13px;
+  text-align:
+
+}
+
+.opret label{
+  font-size: 13px;
+  text-align:
+}
+
+input{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: solid grey;
+    border-width: thin;
+    border-radius: 5px;
+
+
+}
+
+input[type=submit] {
+    font-size: 20px;
+    color: #333;
+    width: 360px;
+    text-align: center;
+    padding:15px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover{
+    background-color: grey;
+    color: white;
+}
+
+.check{
+  text-align: left;
+  padding-left: 35px;
+}
+
+button{
+    font-family: helvetica;
+    font-size: 17px;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    border-color: white;
+    margin: 20px;
+    background-color: #444059;
+    box-shadow: none;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+  }
+button:hover, button:focus {
+      background-color:#f2f0f5;
+      color: #444059;
+      cursor:pointer;
+      border-color: #c6bec4;
+
+  }
+
+.opret p{
+  text-align: left;
+
+}
+
+.check {
+  float:left;
+
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Majas Login og opret konto slut */
+
+
 @media (max-width: 475px) {
 
 .icons {
