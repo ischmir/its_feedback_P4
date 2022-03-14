@@ -253,6 +253,7 @@ h1{
   border-radius: 25px;
   box-shadow: 1px 1px 1px 1px grey;
   line-height: 1.6;
+  text-align: center;
 }
 
 .login h2{
@@ -334,7 +335,7 @@ button{
     align-items: center;
     justify-content: center;
   }
-  
+
 button:hover, button:focus {
       background-color:#f2f0f5;
       color: #444059;
