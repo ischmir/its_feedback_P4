@@ -97,15 +97,15 @@
         <h2>Log In</h2>
         <div class="loginname">
           <form name="navn" action="/action_page.php" onsubmit="return validateForm()" method="post">
-            <input type="text" name="fname" placeholder="Brugernavn/Email">
+            <input type="text" name="fname" placeholder="Brugernavn/Email" id="username">
           </form>
         </div>
 
           <form name="password" action="/action_page.php" onsubmit="return validateForm()" method="post">
-            <input type="text" name="fname" placeholder="Password">
+            <input type="text" name="fname" placeholder="Password" id="password">
           </form>
             <br>
-          <div class"submit"><input type="submit" value="Log In"></div>
+          <div class"submit"><input type="submit" value="Log In" onclick="validate()"></div>
 
       </div>
 
