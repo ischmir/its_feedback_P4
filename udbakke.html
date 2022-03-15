@@ -56,8 +56,9 @@
     </div>
           </nav>
 
-          <button>Udbakke</button>
-          <button>Indbakke</button>
+          <button class="abutton" onclick="window.location.href='udbakke.html'">Udbakke</button>
+          <button onclick="window.location.href='indbakke.html'">Indbakke</button>
+          
 
           <!-- Christians Kode Slut-->
 
@@ -67,10 +68,6 @@
         <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ><p>vedhæftede filer:</p></div>
         <!-- ABDEL - kassen du skal flytte har id'et drop_zone og er lige ovenfor -->
         <br>
-        <!--
-        <button onclick="readDropZone()">Get Object Data</button>
-        -->
-
         <div id="besked"></div>
       <footer>
         <div id="object1" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-pdf" style="color:#fff">&nbsp;rapport.pdf</i></div>
