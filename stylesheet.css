@@ -12,6 +12,11 @@ body {
     background-color: #444059;
     font-family: "Lato","LatoRegular",Helvetica,Arial,sans-serif;
     color:#333;
+
+}
+main {
+  display: flex;
+  justify-content: space-around;
 }
 
 .navbar {
@@ -162,6 +167,7 @@ flex-wrap: wrap;
   color: #444059;
   background-color: #EEE;
   border-color: grey;
+  margin: 4rem 4rem 0 30rem;
 }
 
 #object1 {
@@ -428,16 +434,9 @@ button:hover, button:focus {
 
 }
 }
-<<<<<<< Updated upstream
-=======
 
-/* Matthais REVIEW */
 
-.container{
-    background-color: #554F67;
-    display: flex;
-    justify-content: center;
-}
+
 .custom-select {
     position: relative;
     font-family: Arial;
@@ -553,5 +552,3 @@ padding: 8px;
 font-size: 18px;
 margin: 2rem 0 0 0;
 }
-/* Matthais REVIEW end */
->>>>>>> Stashed changes

@@ -101,8 +101,7 @@ else{
 
 
 //Majas js kode slut //
-<<<<<<< Updated upstream
-=======
+
 //Abdel js kode start //
 
 /* Matthais REVIEW end */
@@ -198,4 +197,3 @@ document.addEventListener("click", closeAllSelect);
 
 // abdel js slut //
 /* Matthais REVIEW end */
->>>>>>> Stashed changes
