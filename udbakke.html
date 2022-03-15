@@ -63,6 +63,37 @@
           <!-- Christians Kode Slut-->
 
         <!-- Timms Kode Start - Drag and Drop Vedhæftet Fil -->
+        <button onclick="window.location.href='udbakke.html'">Udbakke</button>
+          <button class="abutton" onclick="window.location.href='indbakke.html'">Indbakke</button>
+
+          <div class="container">
+            <div class="custom-select" style="width:200px;">
+                <select class="admin">
+                  <option value="0">Vælg en kategori</option>
+                  <option value="1"> Adminstration</option>
+                  <option value="2">IT</option>
+                  <option value="3">Lærer</option>
+                  <option value="4">Andet</option>
+                </select>
+              </div>
+              <div class="custom-select" style="width: 200px;">
+                <select>
+                    <option value="0">Modtager</option>
+                    <option value="1">Karen Malene</option>
+                    <option value="2">Anni</option>
+                    <option value="3">Jesper</option>
+                    <option value="4">Mads</option>
+                    <option value="5">Thomas</option>
+                  </select>
+              </div>
+              <form >
+    
+                <textarea id="text" class="form-control" required class="descr"></textarea>
+                <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ><p>vedhæftede filer:</p></div>
+    
+                <input type="submit" class="btn">
+              </form>
+        </div>
 
         <!-- ABDEL - kassen du skal flytte har id'et drop_zone og er lige nedenfor -->
         <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ><p>vedhæftede filer:</p></div>
