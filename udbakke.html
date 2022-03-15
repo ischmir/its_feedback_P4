@@ -58,11 +58,12 @@
 
           <button class="abutton" onclick="window.location.href='udbakke.html'">Udbakke</button>
           <button onclick="window.location.href='indbakke.html'">Indbakke</button>
-          
+
 
           <!-- Christians Kode Slut-->
 
         <!-- Timms Kode Start - Drag and Drop Vedhæftet Fil -->
+<<<<<<< Updated upstream
         <button onclick="window.location.href='udbakke.html'">Udbakke</button>
           <button class="abutton" onclick="window.location.href='indbakke.html'">Indbakke</button>
 
@@ -94,11 +95,45 @@
                 <input type="submit" class="btn">
               </form>
         </div>
+=======
+          <!-- abdel Kode Start - -->           <!-- M - -->
 
-        <!-- ABDEL - kassen du skal flytte har id'et drop_zone og er lige nedenfor -->
-        <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ><p>vedhæftede filer:</p></div>
-        <!-- ABDEL - kassen du skal flytte har id'et drop_zone og er lige ovenfor -->
-        <br>
+        <div class="container">
+              <div class="custom-select" style="width:200px;">
+                  <select class="admin">
+                    <option value="0">Vælg en kategori</option>
+                    <option value="1"> Adminstration</option>
+                    <option value="2">IT</option>
+                    <option value="3">Lærer</option>
+                    <option value="4">Andet</option>
+                  </select>
+                </div>
+                <div class="custom-select" style="width: 200px;">
+                  <select>
+                      <option value="0">Modtager</option>
+                      <option value="1">Karen Malene</option>
+                      <option value="2">Anni</option>
+                      <option value="3">Jesper</option>
+                      <option value="4">Mads</option>
+                      <option value="5">Thomas</option>
+                    </select>
+                </div>
+                <form >
+
+                  <textarea id="text"         <textarea class="form-control" style: height: "height:100px; width:700px; "name="comment" required class="descr"></textarea>
+                  
+
+                  <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ><p>vedhæftede filer:</p></div>
+                  <br>
+                  <input type="submit" class="udbtn">
+                  <br>
+                </form>
+          </div>
+            <!-- abdel Kode slut  -->
+
+            <!-- Timms Kode start - Drag and Drop Vedhæftet Fil -->
+>>>>>>> Stashed changes
+
         <div id="besked"></div>
       <footer>
         <div id="object1" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-pdf" style="color:#fff">&nbsp;rapport.pdf</i></div>

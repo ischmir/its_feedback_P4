@@ -97,10 +97,17 @@ else{
 }
 }
 //Majas js kode slut //
+<<<<<<< Updated upstream
 
 // Abdels kode
 
 let x, i, j, l, ll, selElmnt, a, b, c;
+=======
+//Abdel js kode start //
+
+
+var x, i, j, l, ll, selElmnt, a, b, c;
+>>>>>>> Stashed changes
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
 l = x.length;
@@ -123,7 +130,11 @@ for (i = 0; i < l; i++) {
     c.addEventListener("click", function(e) {
         /*when an item is clicked, update the original select box,
         and the selected item:*/
+<<<<<<< Updated upstream
         let y, i, k, s, h, sl, yl;
+=======
+        var y, i, k, s, h, sl, yl;
+>>>>>>> Stashed changes
         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
         sl = s.length;
         h = this.parentNode.previousSibling;
@@ -157,7 +168,11 @@ for (i = 0; i < l; i++) {
 function closeAllSelect(elmnt) {
   /*a function that will close all select boxes in the document,
   except the current select box:*/
+<<<<<<< Updated upstream
   let x, y, i, xl, yl, arrNo = [];
+=======
+  var x, y, i, xl, yl, arrNo = [];
+>>>>>>> Stashed changes
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-selected");
   xl = x.length;
@@ -186,4 +201,11 @@ document.addEventListener("click", closeAllSelect);
 //   }
 //   else
 //      return true;
+<<<<<<< Updated upstream
 //   }
+=======
+//   }
+
+
+// abdel js slut //
+>>>>>>> Stashed changes

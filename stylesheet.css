@@ -542,3 +542,123 @@ button:hover, button:focus {
 
 }
 }
+.container{
+    background-color: #554F67;
+    display: flex;
+    justify-content: center;
+}
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    margin: 2rem 0 0 0;
+  }
+
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+
+  .select-selected {
+    background-color: #f2f0f5;
+    width: 700px;
+
+  }
+
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: -500px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #111 transparent transparent transparent;
+  }
+
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #111 transparent;
+  }
+
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #111;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #f2f0f5;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 730px;
+  }
+
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+.descr{
+    margin: 2rem 0 0 0;
+    width: 21.5rem;
+    height: 6rem;
+    border-radius: 5px;
+    max-width: 21.5rem;
+    max-height: 6rem;
+    min-height: 5.5rem;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+form{
+  display: flex;
+
+  flex-direction: column;
+}
+.udbtn{
+  margin: 2rem -4rem 0 15rem;
+
+    width: 13rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: 3px solid #f2f0f5;
+    background: #3B865D;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+#drop_zone {
+  background-color: #f2f0f5;
+  border: #999 1px solid;
+  border-radius: 5px;
+  width: 710px;
+  height: 120px;
+  padding: 8px;
+  font-size: 18px;
+  margin: 4rem 0 0 0;
+}
+#text {
+background-color: #f2f0f5;
+border: #999 1px solid;
+border-radius: 5px;
+width: 710px;
+height: 120px;
+padding: 8px;
+font-size: 18px;
+margin: 2rem 0 0 0;
+}
