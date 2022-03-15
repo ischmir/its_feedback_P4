@@ -65,11 +65,13 @@
         <!-- Timms Kode Start - Drag and Drop Vedhæftet Fil -->
           <!-- abdel Kode Start - -->
         <main>
-          <!-- Alexander kode start -->
+            <!-- Alexander kode start -->
+
           <div id="chat" class="column1">
+            <div class="beskeder-0"> <h1>Sendte Beskeder</h1> </div>
             <div id='beskeder-1'>
               <div class="container">
-              <img src="/Billeder/profilbillede.PNG" alt="student">
+              <img src="/Billeder/profilbillede.jpeg" alt="student">
               <p>Hej Kristin. Jeg kunne godt tænke mig at få feedback på den seneste aflevering omkring brugergrænseflader. Kan du hjælpe med det?</p>
               <span class="time-right">13:07</span>
               </div>
@@ -77,7 +79,7 @@
 
           <div id='beskeder-2' style="display:none;">
             <div class="container darker">
-              <img src="/Billeder/profilbillede1.PNG" alt="teacher" class="right">
+              <img src="/Billeder/profilbillede1.jpeg" alt="teacher" class="right">
               <p>Hej Peter! Ja, selvfølgelig kan du det! Jeg kigger lige opgaven igennem og vender tilbage.</p>
               <span class="time-left">13:08</span>
             </div>
@@ -85,7 +87,7 @@
 
           <div id='beskeder-3' style="display:none;">
             <div class="container">
-              <img src="/Billeder/profilbillede.PNG" alt="Student">
+              <img src="/Billeder/profilbillede.jpeg" alt="Student">
               <p>Nice! Jeg venter spændt.</p>
               <span class="time-right">13:09</span>
             </div>
@@ -93,13 +95,15 @@
 
           <div id='beskeder-4' style="display:none;">
             <div class="container darker">
-              <img src="/Billeder/profilbillede1.PNG" alt="teacher" class="right">
+              <img src="/Billeder/profilbillede1.jpeg" alt="teacher" class="right">
               <p>Det ser simpelthen så fint ud! etc etc etc.....</p>
               <span class="time-left">13:15</span>
             </div>
           </div>
           </div>
         <div class="container">
+          <div class="beskeder-00"> <h3>Ny Besked</h3> </div>
+
               <div class="custom-select" style="width:200px;">
                   <select class="admin">
                     <option value="0">Vælg en kategori</option>
@@ -123,7 +127,7 @@
 
                   <textarea id="text"         <textarea class="form-control" style: height: "height:100px; width:700px; "name="comment" required class="descr"></textarea>
                   <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ><p>vedhæftede filer:</p></div>
-                  <br>
+
                   <input type="submit" onclick="adddt()" class="udbtn">
                   <br>
                 </form>

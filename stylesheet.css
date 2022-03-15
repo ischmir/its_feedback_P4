@@ -21,6 +21,7 @@ main {
   margin-left: 5rem;
 
 
+
 }
 
 .navbar {
@@ -270,6 +271,7 @@ h1{
 
 .login h2{
   text-align: center;
+
 }
 
 
@@ -443,7 +445,7 @@ button:hover, button:focus {
 .custom-select {
     position: relative;
     font-family: Arial;
-    margin: 2rem 0 0 0;
+    margin: 0 0 1rem 0;
   }
 
   .custom-select select {
@@ -543,7 +545,7 @@ form{
   height: 120px;
   padding: 8px;
   font-size: 18px;
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
 }
 #text {
 background-color: #f2f0f5;
@@ -553,7 +555,7 @@ width: 500px;
 height: 120px;
 padding: 8px;
 font-size: 18px;
-margin: 2rem 0 0 0;
+margin: 1rem 0 0 0;
 }
 
 
@@ -572,9 +574,18 @@ margin: 2rem 0 0 0;
     border-radius: 5px;
     padding: 10px;
     margin-top: 30px;
-    max-width: 50%;
-
+    width: 70%;
   }
+h1{
+  padding-right: 30%;
+  font-size: 1.5rem;
+
+}
+h3{
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
 
   /* Darker chat container */
   .darker {
@@ -583,7 +594,7 @@ margin: 2rem 0 0 0;
   }
 
   /* Clear floats */
-#chat  .container::after {
+#chat .container::after {
     content: "";
     clear: both;
     display: table;
@@ -598,10 +609,11 @@ margin: 2rem 0 0 0;
   }
 
   /* Style the right image */
-  .container img.right {
+  #chat .container img.right {
     float: right;
     margin-left: 10px;
     margin-right:0;
+
   }
 
   /* Style time text */
@@ -615,4 +627,22 @@ margin: 2rem 0 0 0;
     float: left;
     color: #999;
   }
+
+
+
+  #chat1 .container {
+      border: 3px solid #dedede;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 30px;
+      margin-left: 8rem;
+      width: 35%;
+    }
+    h4{
+      padding-right: 30%;
+      font-size: 1.5rem;
+      color: white;
+      margin-left: 17.7rem;
+    }
   /* Alexander slut af css */
