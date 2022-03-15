@@ -16,7 +16,11 @@ body {
 }
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-right: 5rem;
+  margin-left: 5rem;
+
+
 }
 
 .navbar {
@@ -448,7 +452,7 @@ button:hover, button:focus {
 
   .select-selected {
     background-color: #f2f0f5;
-    width: 700px;
+    width: 500px;
 
   }
 
@@ -457,7 +461,7 @@ button:hover, button:focus {
     position: absolute;
     content: "";
     top: 14px;
-    right: -500px;
+    right: -285px;
     width: 0;
     height: 0;
     border: 6px solid transparent;
@@ -488,7 +492,7 @@ button:hover, button:focus {
     left: 0;
     right: 0;
     z-index: 99;
-    width: 730px;
+    width: 500px;
   }
 
   /*hide the items when the select box is closed:*/
@@ -520,7 +524,7 @@ form{
   flex-direction: column;
 }
 .udbtn{
-  margin: 1rem -4rem 0 15rem;
+  margin: 1rem -4rem 0 10rem;
 
     width: 13rem;
     height: 3rem;
@@ -535,7 +539,7 @@ form{
   background-color: #f2f0f5;
   border: #999 1px solid;
   border-radius: 5px;
-  width: 710px;
+  width: 500px;
   height: 120px;
   padding: 8px;
   font-size: 18px;
@@ -545,9 +549,70 @@ form{
 background-color: #f2f0f5;
 border: #999 1px solid;
 border-radius: 5px;
-width: 710px;
+width: 500px;
 height: 120px;
 padding: 8px;
 font-size: 18px;
 margin: 2rem 0 0 0;
 }
+
+
+
+
+
+
+
+/* Alexander start af css */
+
+
+/* Chat containers */
+#chat .container {
+    border: 3px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    max-width: 50%;
+
+  }
+
+  /* Darker chat container */
+  .darker {
+    border-color: solid #dedede;
+    background-color: #f3f3f3;
+  }
+
+  /* Clear floats */
+#chat  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Style images */
+  #chat .container img {
+    float: left;
+    max-width: 50px;
+    width: 50%;
+    border-radius: 50%;
+  }
+
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 10px;
+    margin-right:0;
+  }
+
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: #999;
+  }
+  /* Alexander slut af css */

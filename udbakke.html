@@ -55,7 +55,7 @@
       </div>
     </div>
           </nav>
-
+<img src="Billeder/profilbillede.PNG" alt="">
           <button class="abutton" onclick="window.location.href='udbakke.html'">Udbakke</button>
           <button onclick="window.location.href='indbakke.html'">Indbakke</button>
 
@@ -65,6 +65,40 @@
         <!-- Timms Kode Start - Drag and Drop Vedhæftet Fil -->
           <!-- abdel Kode Start - -->
         <main>
+          <!-- Alexander kode start -->
+          <div id="chat" class="column1">
+            <div id='beskeder-1'>
+              <div class="container">
+              <img src="/Billeder/profilbillede.PNG" alt="student">
+              <p>Hej Kristin. Jeg kunne godt tænke mig at få feedback på den seneste aflevering omkring brugergrænseflader. Kan du hjælpe med det?</p>
+              <span class="time-right">13:07</span>
+              </div>
+            </div>
+
+          <div id='beskeder-2' style="display:none;">
+            <div class="container darker">
+              <img src="/Billeder/profilbillede1.PNG" alt="teacher" class="right">
+              <p>Hej Peter! Ja, selvfølgelig kan du det! Jeg kigger lige opgaven igennem og vender tilbage.</p>
+              <span class="time-left">13:08</span>
+            </div>
+          </div>
+
+          <div id='beskeder-3' style="display:none;">
+            <div class="container">
+              <img src="/Billeder/profilbillede.PNG" alt="Student">
+              <p>Nice! Jeg venter spændt.</p>
+              <span class="time-right">13:09</span>
+            </div>
+          </div>
+
+          <div id='beskeder-4' style="display:none;">
+            <div class="container darker">
+              <img src="/Billeder/profilbillede1.PNG" alt="teacher" class="right">
+              <p>Det ser simpelthen så fint ud! etc etc etc.....</p>
+              <span class="time-left">13:15</span>
+            </div>
+          </div>
+          </div>
         <div class="container">
               <div class="custom-select" style="width:200px;">
                   <select class="admin">
@@ -90,7 +124,7 @@
                   <textarea id="text"         <textarea class="form-control" style: height: "height:100px; width:700px; "name="comment" required class="descr"></textarea>
                   <div id="drop_zone" ondragenter="drag_enter(event)" ondrop="drag_drop(event)" ondragover="return false" ondragleave="drag_leave(event)" ><p>vedhæftede filer:</p></div>
                   <br>
-                  <input type="submit" class="udbtn">
+                  <input type="submit" onclick="adddt()" class="udbtn">
                   <br>
                 </form>
           </div>

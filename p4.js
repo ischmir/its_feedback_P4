@@ -197,3 +197,12 @@ document.addEventListener("click", closeAllSelect);
 
 // abdel js slut //
 /* Matthais REVIEW end */
+var count = 2;
+var countMax = 5;
+
+function adddt() {
+  if(count > countMax)
+    return;
+  document.getElementById('beskeder-' + count + '').style.display = 'block';
+  count++;
+}
