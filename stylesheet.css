@@ -646,3 +646,12 @@ h3{
       margin-left: 17.7rem;
     }
   /* Alexander slut af css */
+
+  .message{
+    background-color: #f2f0f5;
+    border-radius: 5px;
+    border: 3px solid #dedede;
+    width: 500px;
+    height: 200px;
+    margin-bottom: 1rem;
+  }

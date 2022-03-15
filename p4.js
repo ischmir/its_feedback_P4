@@ -197,6 +197,7 @@ document.addEventListener("click", closeAllSelect);
 
 // abdel js slut //
 /* Matthais REVIEW end */
+
 var count = 2;
 var countMax = 5;
 
@@ -205,4 +206,40 @@ function adddt() {
     return;
   document.getElementById('beskeder-' + count + '').style.display = 'block';
   count++;
+}
+// Timms js kode start //
+function message0() {
+  var x = document.getElementById("modtag0");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function message1() {
+  var y = document.getElementById("modtag1");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}
+
+function message2() {
+  var z = document.getElementById("modtag2");
+  if (z.style.display === "none") {
+    z.style.display = "block";
+  } else {
+    z.style.display = "none";
+  }
+}
+
+function message3() {
+  var v = document.getElementById("modtag3");
+  if (v.style.display === "none") {
+    v.style.display = "block";
+  } else {
+    v.style.display = "none";
+  }
 }
