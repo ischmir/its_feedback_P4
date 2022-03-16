@@ -21,11 +21,7 @@ function _(id){
      }
      droppedIn = false;
  }
- function readDropZone(){
-     for(let i=0; i < _("drop_zone").children.length; i++){
-         alert(_("drop_zone").children[i].id+" is in the drop zone");
-     }
- }
+
 
 
 
@@ -104,8 +100,6 @@ else{
 
 //Abdel js kode start //
 
-/* Matthais REVIEW end */
-
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
@@ -181,22 +175,8 @@ function closeAllSelect(elmnt) {
     }
   }
 }
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
+/*lukker alle drop down menuer hvis der klikkes udenfor området*/
 document.addEventListener("click", closeAllSelect);
-
-// function validateForm(f) {
-//   if (f.value == "") {
-//      alert("Please enter some text into the feedback field");
-//      return false;
-//   }
-//   else
-//      return true;
-//   }
-
-
-// abdel js slut //
-/* Matthais REVIEW end */
 
 var count = 2;
 var countMax = 5;
@@ -207,39 +187,39 @@ function adddt() {
   document.getElementById('beskeder-' + count + '').style.display = 'block';
   count++;
 }
-// Timms js kode start //
+
 function message0() {
-  var x = document.getElementById("modtag0");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  let xx = document.getElementById("modtag0");
+  if (xx.style.display === "none") {
+    xx.style.display = "block";
   } else {
-    x.style.display = "none";
+    xx.style.display = "none";
   }
 }
 
 function message1() {
-  var y = document.getElementById("modtag1");
-  if (y.style.display === "none") {
-    y.style.display = "block";
+  let yy = document.getElementById("modtag1");
+  if (yy.style.display === "none") {
+    yy.style.display = "block";
   } else {
-    y.style.display = "none";
+    yy.style.display = "none";
   }
 }
 
 function message2() {
-  var z = document.getElementById("modtag2");
-  if (z.style.display === "none") {
-    z.style.display = "block";
+  let zz = document.getElementById("modtag2");
+  if (zz.style.display === "none") {
+    zz.style.display = "block";
   } else {
-    z.style.display = "none";
+    zz.style.display = "none";
   }
 }
 
 function message3() {
-  var v = document.getElementById("modtag3");
-  if (v.style.display === "none") {
-    v.style.display = "block";
+  let vv = document.getElementById("modtag3");
+  if (vv.style.display === "none") {
+    vv.style.display = "block";
   } else {
-    v.style.display = "none";
+    vv.style.display = "none";
   }
 }

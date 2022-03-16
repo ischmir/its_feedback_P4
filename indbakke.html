@@ -56,13 +56,19 @@
   </div>
         </nav>
         <!-- Christians Kode Slut-->
-        <button class="abutton" onclick="window.location.href='udbakke.html'">Udbakke</button>
-          <button onclick="window.location.href='indbakke.html'">Indbakke</button>
+        <div class="ind-ud">
+          <button class="bbutton" onclick="window.location.href='udbakke.html'">Udbakke</button>
+          <button class="ind-abutton" onclick="window.location.href='indbakke.html'">Indbakke</button>
+        </div>
 
+          <div class="overskrift-0">
+          <div class="beskeder-0"> <h4>Modtaget Beskeder</h4> </div>
+          <div class="beskeder-0"> <h4>Åben Besked</h4> </div>
+        </div>
+          
     <!-- Alexander kode start -->
-<main>
+<div class="main-container">
   <div id="chat1" class="column1">
-    <div class="beskeder-0"> <h4>Modtaget Beskeder</h4> </div>
     <div id='beskeder-1'>
       <div class="container">
       <img src="/Billeder/profilbillede.jpeg" alt="student">
@@ -98,32 +104,37 @@
       <span class="time-left">13:15</span>
     </div>
   </div>
-  </div>
 </div>
-<div>
-  <h3>Beskeder</h3>
-</div>
+
+<div class="besked-container">
 <div id="modtag0" class="message">
-<p>afsender</p>
-<p>besked</p>
-<p>vedhæftede filer</p>
-
-<div id="modtag1" class="message">
-  <p>afsender</p>
-  <p>besked</p>
-  <p>vedhæftede filer</p>
-
-  <div id="modtag2" class="message">
-    <p>afsender</p>
-    <p>besked</p>
-    <p>vedhæftede filer</p>
-
-    <div id="modtag3" class="message">
-      <p>afsender</p>
-      <p>besked</p>
-      <p>vedhæftede filer</p>
+<b>afsender:</b> <p>Student</p>
+<b>besked:</b><p>Hej Kristin. Jeg kunne godt tænke mig at få feedback på den seneste aflevering omkring brugergrænseflader. Kan du hjælpe med det?</p>
+<p><b>vedhæftede filer:</b></p>
 </div>
-</main>
-
+<br>
+<div id="modtag1" class="message">
+  <b>afsender:</b> <p>Teacher</p>
+<b>besked:</b><p>Hej Peter! Ja, selvfølgelig kan du det! Jeg kigger lige opgaven igennem og vender tilbage.</p>
+<p><b>vedhæftede filer:</b></p>
+  </div>
+  <br>
+  <div id="modtag2" class="message">
+    <b>afsender:</b> <p>Student</p>
+<b>besked:</b><p>Nice! Jeg venter spændt.</p>
+<p><b>vedhæftede filer:</b></p>
+    </div>
+    <br>
+    <div id="modtag3" class="message">
+      <b>afsender:</b> <p>Teacher</p>
+<b>besked:</b><p>Det ser simpelthen så fint ud! etc etc etc.....</p>
+<p><b>vedhæftede filer:</b></p>
+    </div>
+    <br>
+  </div>
+<footer>
+  <div id="object1" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-pdf" style="color:#fff">&nbsp;rapport.pdf</i></div>
+  <div id="object2" draggable="true" ondragstart="drag_start(event)" ondragend="drag_end(event)"><i class="fa-solid fa-file-image" style="color:#fff">&nbsp;logo.png</i></div>
+</footer>
 </body>
 </html>

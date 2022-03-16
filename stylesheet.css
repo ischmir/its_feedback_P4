@@ -168,12 +168,26 @@ flex-wrap: wrap;
 .show {display:block;}
 
 /* Timms CSS START - DRAG AND DROP VEDHÆFTET FIL */
+.ind-ud{
+  display: flex;
+}
 .abutton {
   color: #444059;
   background-color: #EEE;
   border-color: grey;
   margin: 2rem 4rem 0 30rem;
 }
+
+.ind-abutton {
+  color: #444059;
+  background-color: #EEE;
+  border-color: grey;
+  margin: 2rem 4rem 0 0;
+}
+.bbutton{
+  margin: 2rem 4rem 0 30rem;
+}
+
 
 #object1 {
   display:inline-block;
@@ -310,12 +324,11 @@ input{
     border-width: thin;
     border-radius: 5px;
 }
-}
 
 input[type=submit] {
     font-size: 20px;
     color: #333;
-    width: 360px;
+    width: 300px;
     text-align: center;
     padding:15px 15px;
     background:#ccc;
@@ -629,21 +642,30 @@ h3{
   }
 
 
+  .main-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
 
   #chat1 .container {
       border: 3px solid #dedede;
       background-color: #f1f1f1;
       border-radius: 5px;
       padding: 10px;
-      margin-top: 30px;
-      margin-left: 8rem;
-      width: 35%;
+      margin-bottom: 30px;
+      width: 75%;
     }
-    h4{
-      padding-right: 30%;
+
+    .overskrift-0{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .beskeder-0 h4{
       font-size: 1.5rem;
       color: white;
-      margin-left: 17.7rem;
     }
   /* Alexander slut af css */
 
@@ -652,6 +674,8 @@ h3{
     border-radius: 5px;
     border: 3px solid #dedede;
     width: 500px;
-    height: 200px;
-    margin-bottom: 1rem;
+  }
+
+  .besked-container{
+    display:block;
   }
