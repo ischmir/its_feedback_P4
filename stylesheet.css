@@ -167,7 +167,6 @@ flex-wrap: wrap;
 
 .show {display:block;}
 
-/* Timms CSS START - DRAG AND DROP VEDHÆFTET FIL */
 .ind-ud{
   display: flex;
 }
@@ -251,9 +250,7 @@ footer {
   width: 100%;
   background: #3f3f3f;
 }
-/* Timms CSS SLUT - DRAG AND DROP VEDHÆFTET FIL */
 
-/* Majas Login og opret konto start */
 .signinup{
   font-family: "Lato","LatoRegular",Helvetica,Arial,sans-serif;
   margin: 10px 10px 15px;
@@ -387,8 +384,6 @@ button:hover, button:focus {
   -ms-user-select: none;
   user-select: none;
 }
-/* Majas Login og opret konto slut */
-
 
 @media (max-width: 800px) {
     .navbar {
@@ -462,7 +457,7 @@ button:hover, button:focus {
   }
 
   .custom-select select {
-    display: none; /*hide original SELECT element:*/
+    display: none;
   }
 
   .select-selected {
@@ -471,7 +466,7 @@ button:hover, button:focus {
 
   }
 
-  /*style the arrow inside the select element:*/
+  /*style pilen i elementet*/
   .select-selected:after {
     position: absolute;
     content: "";
@@ -483,12 +478,12 @@ button:hover, button:focus {
     border-color: #111 transparent transparent transparent;
   }
 
-  /*point the arrow upwards when the select box is open (active):*/
+  /*skift retning på pilen (active):*/
   .select-selected.select-arrow-active:after {
     border-color: transparent transparent #111 transparent;
   }
 
-  /*style the items (options), including the selected item:*/
+  /*style option og selected items*/
   .select-items div,.select-selected {
     color: #111;
     padding: 8px 16px;
@@ -510,7 +505,7 @@ button:hover, button:focus {
     width: 500px;
   }
 
-  /*hide the items when the select box is closed:*/
+  /*hide items ved første box selected:*/
   .select-hide {
     display: none;
   }
@@ -570,15 +565,6 @@ padding: 8px;
 font-size: 18px;
 margin: 1rem 0 0 0;
 }
-
-
-
-
-
-
-
-/* Alexander start af css */
-
 
 /* Chat containers */
 #chat .container {
@@ -667,7 +653,6 @@ h3{
       font-size: 1.5rem;
       color: white;
     }
-  /* Alexander slut af css */
 
   .message{
     background-color: #f2f0f5;

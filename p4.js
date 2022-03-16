@@ -9,7 +9,7 @@ function _(id){
      event.dataTransfer.setData("text", event.target.getAttribute('id') );
  }
  function drag_drop(event) {
-     event.preventDefault(); /* Prevent undesirable default behavior while dropping */
+     event.preventDefault();
      let elem_id = event.dataTransfer.getData("text");
      event.target.appendChild( _(elem_id) );
      _(elem_id).removeAttribute("draggable");
@@ -22,13 +22,10 @@ function _(id){
      droppedIn = false;
  }
 
+  let toggleButton = document.getElementsByClassName('toggle-button')[0]
+  let navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-
-
- let toggleButton = document.getElementsByClassName('toggle-button')[0]
-let navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
+  toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 });
 
@@ -57,8 +54,6 @@ if (time < 10) {
 }
 document.getElementById("Morgenmessage").innerHTML = greeting;
 
-
-// Majas js kode start //
   let divs = ["loginjs", "opretjs"];
   let visibleId = null;
   function show(id) {
@@ -79,7 +74,6 @@ document.getElementById("Morgenmessage").innerHTML = greeting;
     }
   }
 }
-
 //login popup//
 function validate(){
 var username=document.getElementById("username").value;
@@ -94,35 +88,27 @@ else{
 }
 }
 
-
-
-//Majas js kode slut //
-
-//Abdel js kode start //
-
 var x, i, j, l, ll, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
+/*for hvert element med class custom-select*/
 x = document.getElementsByClassName("custom-select");
 l = x.length;
 for (i = 0; i < l; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
   ll = selElmnt.length;
-  /*for each element, create a new DIV that will act as the selected item:*/
+  /*for hvert element, lav en ny div*/
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
+  /*for hvert element, lav en ny div som skal indeholde option listen*/
   b = document.createElement("DIV");
   b.setAttribute("class", "select-items select-hide");
   for (j = 1; j < ll; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
+    /*for hver option i det originale select element, lav en ny div som virker som option item*/
     c = document.createElement("DIV");
     c.innerHTML = selElmnt.options[j].innerHTML;
     c.addEventListener("click", function(e) {
-        /*when an item is clicked, update the original select box,
-        and the selected item:*/
+    /*når et item er klikket på opdater den originale box og selected item.*/
         var y, i, k, s, h, sl, yl;
         s = this.parentNode.parentNode.getElementsByTagName("select")[0];
         sl = s.length;
@@ -146,8 +132,7 @@ for (i = 0; i < l; i++) {
   }
   x[i].appendChild(b);
   a.addEventListener("click", function(e) {
-      /*when the select box is clicked, close any other select boxes,
-      and open/close the current select box:*/
+      /*Når select box er klikket luk alle andre boxe*/
       e.stopPropagation();
       closeAllSelect(this);
       this.nextSibling.classList.toggle("select-hide");
@@ -155,8 +140,7 @@ for (i = 0; i < l; i++) {
     });
 }
 function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
+  /* function som lukker alle andre kasser undtagen den nuværdende.*/
   var x, y, i, xl, yl, arrNo = [];
   x = document.getElementsByClassName("select-items");
   y = document.getElementsByClassName("select-selected");
